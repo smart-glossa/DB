@@ -13,7 +13,7 @@ public class detailsclass {
 	public JSONObject addDetails(int sNo, String name,String gender, String fathersName,String mothersName, String address, String dOfBirth, String work, String mobileNumber, String emailId, String whatsappNumber, String facebookId ) throws JSONException{
 		JSONObject result=new JSONObject();
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.jdbc.Driver"); // Have to changes this.
 			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/ndetails", "root", "root");
 	        Statement statement = connection.createStatement();
 	        
